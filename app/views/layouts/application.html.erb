@@ -25,6 +25,13 @@
 
   <body>
     <%= render "shared/navbar" %>
+    <%= render "shared/marquee_banner",
+      text: "Lorem, ipsum dolor",
+      link_text: "sit amet consectetur",
+      link_path: "#",# ← ton vrai chemin Rails
+      speed: 18 # plus petit = plus rapide
+    %>
+    
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>

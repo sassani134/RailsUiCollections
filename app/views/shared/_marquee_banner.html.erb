@@ -1,0 +1,36 @@
+<!--
+<%# 
+  Usage :
+  <%#= render "shared/marquee_banner",
+        text: "Lorem, ipsum dolor",
+        link_text: "sit amet consectetur",
+        link_path: root_path,
+        speed: 20 # optionnel (secondes pour un cycle complet) 
+    %>
+%>
+-->
+
+<div
+  class="border-b border-gray-200 bg-gray-100 px-4 py-2 text-gray-900 overflow-hidden"
+  data-controller="marquee"
+  data-marquee-speed-value="<%= local_assigns.fetch(:speed, 20) %>"
+>
+  <div class="relative flex overflow-hidden">
+    <%# Conteneur qui défile %>
+    <div
+      class="flex whitespace-nowrap"
+      data-marquee-target="track"
+      data-action="mouseenter->marquee#pause mouseleave->marquee#play"
+    >
+      <%# On duplique le contenu pour un défilement infini fluide %>
+      <% 2.times do %>
+        <p class="flex items-center gap-1 px-8 font-medium">
+          <%= local_assigns.fetch(:text, "Lorem, ipsum dolor") %>
+          <%= link_to local_assigns.fetch(:link_text, "sit amet consectetur"),
+                      local_assigns.fetch(:link_path, "#"),
+                      class: "inline-block underline hover:text-teal-600 transition" %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>

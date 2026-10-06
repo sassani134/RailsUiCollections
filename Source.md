@@ -1,0 +1,8 @@
+- [prettier html erb](https://github.com/Nilkee/prettier-plugin-html-erb)
+- [prettier ruby](https://github.com/prettier/plugin-ruby)
+- [Hyper Ui](https://hyperui.dev/)
+- [stimulus comp](https://www.stimulus-components.com/)
+- [tailwind stimulus comp](https://github.com/excid3/tailwindcss-stimulus-components)
+- [Flobite](https://flowbite.com/docs/components/datepicker/)
+- [Daisy UI](https://daisyui.com/?lang=fr)
+- [preline](https://preline.co/)

@@ -67,6 +67,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "rspec-rails", "~> 8.0", groups: [:development, :test]
+gem "rspec-rails", "~> 8.1", groups: [:development, :test]
 
 gem "hotwire-spark", "~> 0.1.13", group: :development
